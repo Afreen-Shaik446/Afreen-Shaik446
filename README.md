@@ -72,4 +72,4 @@ My public engineering repositories demonstrate practical foundations relevant to
 
 ---
 
-*My goal is to pursue rigorous, reproducible ML-systems research that explains not only when an approach works, but also when it does not.*
+*My long-term aspiration is to contribute meaningful advances to machine learning systems research, particularly in efficient and scalable large language model inference. I am driven by the belief that impactful research requires more than achieving performance improvements; it requires understanding the fundamental reasons behind both successes and limitations. Through rigorous experimentation, reproducible evaluation, and a willingness to challenge my own assumptions, I hope to develop systems that are not only efficient and reliable but also grounded in scientific evidence. My goal is to pursue doctoral research that transforms challenging engineering problems into meaningful scientific contributions and advances our understanding of intelligent computing systems.*
