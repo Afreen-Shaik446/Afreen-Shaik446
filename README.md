@@ -10,6 +10,8 @@ My central research interest is **efficient LLM inference under changing workloa
 
 ### Adaptive Scheduling for LLM Inference Under Bursty Workloads
 
+**Published research repository:** [vLLM Workload-Adaptive Scheduling — source code, GPU evidence, benchmark methodology, and audit scripts](https://github.com/Afreen-Shaik446/vllm-workload-adaptive-scheduling). This is an exploratory independent research project, not a peer-reviewed publication.
+
 **Research question:** Can lightweight workload signals guide request scheduling to improve high-percentile time-to-first-token (TTFT) while preserving throughput and responsiveness for long requests?
 
 I developed and evaluated an experimental, workload-aware scheduling prototype for **vLLM 0.32.0**, examining queue pressure, heterogeneous request lengths, per-step scheduled-token budgets, and latency-throughput tradeoffs. The prototype implementation included AI-assisted coding; the study is an independent research effort, not a faculty-supervised or published project.
@@ -30,7 +32,7 @@ I developed and evaluated an experimental, workload-aware scheduling prototype f
 
 **Finding:** The adaptive policy changed scheduling budgets during real GPU serving, but **did not outperform the strongest fixed baseline** in this pilot. Compared with fixed 2,048, its P99 TTFT was 83.3% higher and output throughput was 19.2% lower. This negative result motivates a more precise systems question: **under what workload regimes does adaptive scheduling justify its overhead and tradeoffs?**
 
-**Scope and limitations:** These are exploratory **single-seed, single-model, single-GPU, single-workload** findings, not a statistically established improvement, a general comparison against published adaptive schedulers, or a peer-reviewed publication. TTFT is client-observed; throughput is total output tokens divided by experiment wall-clock duration. Further repeated experiments, workload sweeps, and fairness measurements are planned. The code snapshot and raw logs are retained, while a public reproducibility package is being prepared.
+**Scope and limitations:** These are exploratory **single-seed, single-model, single-GPU, single-workload** findings, not a statistically established improvement, a general comparison against published adaptive schedulers, or a peer-reviewed publication. TTFT is client-observed; throughput is total output tokens divided by experiment wall-clock duration. Further repeated experiments, workload sweeps, and fairness measurements are planned. The experiment code, archived logs, independent audit, and reproduction instructions are available in the [public research repository](https://github.com/Afreen-Shaik446/vllm-workload-adaptive-scheduling).
 
 ### Current research directions
 
